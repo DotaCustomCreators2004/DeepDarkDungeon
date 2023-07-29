@@ -1,49 +1,95 @@
 // Dota Heroes File
-"DOTAAbilities"
-{
+"DOTAAbilities" {
+
 	"Version"		"1"
 
-	//=================================================================================================================
-	// Templar Assassin: Refraction Holdout
-	//=================================================================================================================
-	"templar_assassin_refraction_holdout"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+	"pudge_debuff" {
 
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"   					"pudge_debuff"
+		"AbilityTextureName"			"necrolyte_heartstopper_aura"
+		"MaxLevel"		"4"
+		"LevelsBetweenUpgrades"			"2"
+		"AbilityModifierSupportValue" 	"500"
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_AURA | DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"17.0 17.0 17.0 17.0"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"100"
-		
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"damage_absorb"				"200 300 400 500"
+		"AbilitySpecial" {
+			"01" {
+				"var_type"				"FIELD_STRING"
+				"ability_name"			"Debuff"
 			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"bonus_damage"				"20 40 60 80"
-			}
-			"04"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"					"17.0 17.0 17.0 17.0"
+			"02" {
+				"var_type"				"FIELD_STRING"
+				"ability_description"	"Pudge is happy"
 			}
 		}
+
+		
+	}
+
+	"pudge_2" {
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCastRange"					"1000"
+
+		"AbilityCooldown"					"10"
+		"AbilityManaCost"					"100"
+
+		"AbilitySpecial" {
+			"01" {
+				"var_type"				"FIELD_INTEGER"
+				"healAmount"			"200 400 600 800"
+			}
+		}
+
+		"RunScript" {
+				"ScriptFile"		"scripts/vscripts/pudge.lua"
+				"Function"			"pudge_2"
+			}
+
+	}
+
+	"pudge_3" {
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCastRange"					"1000"
+
+		"AbilityCooldown"					"10"
+		"AbilityManaCost"					"100"
+
+		"AbilitySpecial" {
+			"01" {
+				"var_type"				"FIELD_INTEGER"
+				"healAmount"			"200 400 600 800"
+			}
+		}
+
+		"RunScript" {
+				"ScriptFile"		"scripts/vscripts/pudge.lua"
+				"Function"			"pudge_3"
+			}
+
+	}
+
+	"pudge_4" {
+
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCastRange"					"1000"
+
+		"AbilityCooldown"					"10"
+		"AbilityManaCost"					"100"
+
+		"AbilitySpecial" {
+			"01" {
+				"var_type"				"FIELD_INTEGER"
+				"healAmount"			"200 400 600 800"
+			}
+		}
+
+		"RunScript" {
+				"ScriptFile"		"scripts/vscripts/pudge.lua"
+				"Function"			"pudge_4"
+			}
+
 	}
 }

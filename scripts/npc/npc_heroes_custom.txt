@@ -3,13 +3,25 @@
 // the specified key-value combinations.  Use override_hero <hero_to_override> for this.
 "DOTAHeroes"
 {
+
 	//=================================================================================================================
-	// HERO: Templar Assassin
+	// HERO: Pudge
 	//=================================================================================================================
-	"npc_dota_hero_templar_assassin_template"
+	"npc_dota_hero_pudge_template"
 	{
-		"override_hero"				"npc_dota_hero_templar_assassin"			// Hero to override
-		"Ability1"					"templar_assassin_refraction_holdout"		// Ability 1
-		"VisionNighttimeRange"		"1800"										// Range of vision at night time.
+		"override_hero"				"npc_dota_hero_pudge"			// Hero to override
+		"Ability1"					"pudge_debuff"		// Ability 1
+		//"Ability2"					"pudge_2"		// Ability 2
+		//"Ability3"					"pudge_3"		// Ability 3
+		//"Ability4"					"pudge_4"		// Ability 4
 	}
+
+	//=================================================================================================================
+	// HERO: Slark
+	//=================================================================================================================
+
+	//=================================================================================================================
+	// HERO: Shadow Fiend
+	//=================================================================================================================
+
 }

@@ -18,6 +18,7 @@ end
 function Activate()
 	GameRules.AddonTemplate = CAddonTemplateGameMode()
 	GameRules.AddonTemplate:InitGameMode()
+	
 end
 
 function CAddonTemplateGameMode:InitGameMode()
